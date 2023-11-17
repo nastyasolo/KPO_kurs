@@ -101,5 +101,12 @@ namespace курсовая_кпо
                 MessageBox.Show("Не верно(");
             }
         }
+
+        private void comeToMenu_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            MenuForm menuForm = new MenuForm();
+            menuForm.Show();
+        }
     }
 }

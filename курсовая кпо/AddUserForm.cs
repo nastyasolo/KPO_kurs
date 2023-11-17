@@ -99,6 +99,11 @@ namespace курсовая_кпо
             menuForm.Show();
         }
 
-       
+        private void label6_Click_1(object sender, EventArgs e)
+        {
+            this.Hide();
+            MenuForm menuForm = new MenuForm();
+            menuForm.Show();
+        }
     }
 }

@@ -81,7 +81,9 @@ namespace курсовая_кпо
 
         private void deleteUser_Click(object sender, EventArgs e)
         {
-
+            this.Hide();
+            DeleteUserForm deleteUserForm = new DeleteUserForm();
+            deleteUserForm.Show();
         }
     }
 }

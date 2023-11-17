@@ -29,32 +29,32 @@
         private void InitializeComponent()
         {
             this.panel1 = new System.Windows.Forms.Panel();
+            this.comeToMenu = new System.Windows.Forms.Label();
+            this.roleField = new System.Windows.Forms.TextBox();
+            this.label4 = new System.Windows.Forms.Label();
+            this.label3 = new System.Windows.Forms.Label();
+            this.label2 = new System.Windows.Forms.Label();
+            this.pictureBox3 = new System.Windows.Forms.PictureBox();
             this.buttonAddUser = new System.Windows.Forms.Button();
             this.passField = new System.Windows.Forms.TextBox();
+            this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.loginField = new System.Windows.Forms.TextBox();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.panel2 = new System.Windows.Forms.Panel();
             this.closeButton = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
-            this.label2 = new System.Windows.Forms.Label();
-            this.label3 = new System.Windows.Forms.Label();
-            this.pictureBox2 = new System.Windows.Forms.PictureBox();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
-            this.label6 = new System.Windows.Forms.Label();
-            this.label4 = new System.Windows.Forms.Label();
-            this.pictureBox3 = new System.Windows.Forms.PictureBox();
-            this.roleField = new System.Windows.Forms.TextBox();
             this.panel1.SuspendLayout();
-            this.panel2.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
+            this.panel2.SuspendLayout();
             this.SuspendLayout();
             // 
             // panel1
             // 
             this.panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(173)))), ((int)(((byte)(149)))), ((int)(((byte)(149)))));
             this.panel1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
-            this.panel1.Controls.Add(this.label6);
+            this.panel1.Controls.Add(this.comeToMenu);
             this.panel1.Controls.Add(this.roleField);
             this.panel1.Controls.Add(this.label4);
             this.panel1.Controls.Add(this.label3);
@@ -71,6 +71,66 @@
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(498, 444);
             this.panel1.TabIndex = 1;
+            // 
+            // comeToMenu
+            // 
+            this.comeToMenu.AutoSize = true;
+            this.comeToMenu.Location = new System.Drawing.Point(407, 422);
+            this.comeToMenu.Name = "comeToMenu";
+            this.comeToMenu.Size = new System.Drawing.Size(79, 13);
+            this.comeToMenu.TabIndex = 12;
+            this.comeToMenu.Text = "Назад в меню";
+            this.comeToMenu.Click += new System.EventHandler(this.label6_Click_1);
+            // 
+            // roleField
+            // 
+            this.roleField.Font = new System.Drawing.Font("Imprint MT Shadow", 24F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.roleField.Location = new System.Drawing.Point(212, 278);
+            this.roleField.Multiline = true;
+            this.roleField.Name = "roleField";
+            this.roleField.Size = new System.Drawing.Size(220, 45);
+            this.roleField.TabIndex = 11;
+            // 
+            // label4
+            // 
+            this.label4.AutoSize = true;
+            this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.label4.Location = new System.Drawing.Point(32, 278);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(65, 25);
+            this.label4.TabIndex = 10;
+            this.label4.Text = "Роль";
+            // 
+            // label3
+            // 
+            this.label3.AutoSize = true;
+            this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.label3.Location = new System.Drawing.Point(12, 197);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(92, 25);
+            this.label3.TabIndex = 9;
+            this.label3.Text = "Пароль";
+            // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.label2.Location = new System.Drawing.Point(21, 113);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(76, 25);
+            this.label2.TabIndex = 8;
+            this.label2.Text = "Логин";
+            // 
+            // pictureBox3
+            // 
+            this.pictureBox3.Image = global::курсовая_кпо.Properties.Resources._9045396_user_role_icon;
+            this.pictureBox3.InitialImage = global::курсовая_кпо.Properties.Resources.user_icon;
+            this.pictureBox3.Location = new System.Drawing.Point(120, 259);
+            this.pictureBox3.Name = "pictureBox3";
+            this.pictureBox3.Size = new System.Drawing.Size(64, 64);
+            this.pictureBox3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox3.TabIndex = 7;
+            this.pictureBox3.TabStop = false;
             // 
             // buttonAddUser
             // 
@@ -99,6 +159,17 @@
             this.passField.TabIndex = 4;
             this.passField.UseSystemPasswordChar = true;
             // 
+            // pictureBox2
+            // 
+            this.pictureBox2.Image = global::курсовая_кпо.Properties.Resources.lock_icon;
+            this.pictureBox2.InitialImage = global::курсовая_кпо.Properties.Resources.user_icon;
+            this.pictureBox2.Location = new System.Drawing.Point(120, 178);
+            this.pictureBox2.Name = "pictureBox2";
+            this.pictureBox2.Size = new System.Drawing.Size(64, 64);
+            this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox2.TabIndex = 3;
+            this.pictureBox2.TabStop = false;
+            // 
             // loginField
             // 
             this.loginField.Font = new System.Drawing.Font("Imprint MT Shadow", 24F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -107,6 +178,17 @@
             this.loginField.Name = "loginField";
             this.loginField.Size = new System.Drawing.Size(220, 45);
             this.loginField.TabIndex = 2;
+            // 
+            // pictureBox1
+            // 
+            this.pictureBox1.Image = global::курсовая_кпо.Properties.Resources.user_icon;
+            this.pictureBox1.InitialImage = global::курсовая_кпо.Properties.Resources.user_icon;
+            this.pictureBox1.Location = new System.Drawing.Point(120, 94);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(64, 64);
+            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox1.TabIndex = 1;
+            this.pictureBox1.TabStop = false;
             // 
             // panel2
             // 
@@ -146,88 +228,6 @@
             this.label1.TextAlign = System.Drawing.ContentAlignment.TopCenter;
             this.label1.Click += new System.EventHandler(this.label1_Click);
             // 
-            // label2
-            // 
-            this.label2.AutoSize = true;
-            this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.label2.Location = new System.Drawing.Point(21, 113);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(76, 25);
-            this.label2.TabIndex = 8;
-            this.label2.Text = "Логин";
-            // 
-            // label3
-            // 
-            this.label3.AutoSize = true;
-            this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.label3.Location = new System.Drawing.Point(12, 197);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(92, 25);
-            this.label3.TabIndex = 9;
-            this.label3.Text = "Пароль";
-            // 
-            // pictureBox2
-            // 
-            this.pictureBox2.Image = global::курсовая_кпо.Properties.Resources.lock_icon;
-            this.pictureBox2.InitialImage = global::курсовая_кпо.Properties.Resources.user_icon;
-            this.pictureBox2.Location = new System.Drawing.Point(120, 178);
-            this.pictureBox2.Name = "pictureBox2";
-            this.pictureBox2.Size = new System.Drawing.Size(64, 64);
-            this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox2.TabIndex = 3;
-            this.pictureBox2.TabStop = false;
-            // 
-            // pictureBox1
-            // 
-            this.pictureBox1.Image = global::курсовая_кпо.Properties.Resources.user_icon;
-            this.pictureBox1.InitialImage = global::курсовая_кпо.Properties.Resources.user_icon;
-            this.pictureBox1.Location = new System.Drawing.Point(120, 94);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(64, 64);
-            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox1.TabIndex = 1;
-            this.pictureBox1.TabStop = false;
-            // 
-            // label6
-            // 
-            this.label6.AutoSize = true;
-            this.label6.Location = new System.Drawing.Point(407, 422);
-            this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(79, 13);
-            this.label6.TabIndex = 12;
-            this.label6.Text = "Назад в меню";
-            
-            // 
-            // label4
-            // 
-            this.label4.AutoSize = true;
-            this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.label4.Location = new System.Drawing.Point(32, 278);
-            this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(65, 25);
-            this.label4.TabIndex = 10;
-            this.label4.Text = "Роль";
-            // 
-            // pictureBox3
-            // 
-            this.pictureBox3.Image = global::курсовая_кпо.Properties.Resources._9045396_user_role_icon;
-            this.pictureBox3.InitialImage = global::курсовая_кпо.Properties.Resources.user_icon;
-            this.pictureBox3.Location = new System.Drawing.Point(120, 259);
-            this.pictureBox3.Name = "pictureBox3";
-            this.pictureBox3.Size = new System.Drawing.Size(64, 64);
-            this.pictureBox3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox3.TabIndex = 7;
-            this.pictureBox3.TabStop = false;
-            // 
-            // roleField
-            // 
-            this.roleField.Font = new System.Drawing.Font("Imprint MT Shadow", 24F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.roleField.Location = new System.Drawing.Point(212, 278);
-            this.roleField.Multiline = true;
-            this.roleField.Name = "roleField";
-            this.roleField.Size = new System.Drawing.Size(220, 45);
-            this.roleField.TabIndex = 11;
-            // 
             // AddUserForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -241,11 +241,11 @@
             this.Text = "AddUserForm";
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
-            this.panel2.ResumeLayout(false);
-            this.panel2.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
+            this.panel2.ResumeLayout(false);
+            this.panel2.PerformLayout();
             this.ResumeLayout(false);
 
         }
@@ -263,7 +263,7 @@
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.Label label6;
+        private System.Windows.Forms.Label comeToMenu;
         private System.Windows.Forms.TextBox roleField;
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.PictureBox pictureBox3;

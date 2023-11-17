@@ -224,7 +224,7 @@
             // 
             this.UsersDataL.AutoSize = true;
             this.UsersDataL.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.UsersDataL.Location = new System.Drawing.Point(180, 423);
+            this.UsersDataL.Location = new System.Drawing.Point(185, 423);
             this.UsersDataL.Name = "UsersDataL";
             this.UsersDataL.Size = new System.Drawing.Size(234, 24);
             this.UsersDataL.TabIndex = 22;

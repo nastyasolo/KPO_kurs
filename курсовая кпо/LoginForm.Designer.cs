@@ -31,22 +31,24 @@
             this.panel1 = new System.Windows.Forms.Panel();
             this.buttonLogin = new System.Windows.Forms.Button();
             this.passField = new System.Windows.Forms.TextBox();
-            this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.loginField = new System.Windows.Forms.TextBox();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.panel2 = new System.Windows.Forms.Panel();
             this.closeButton = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
+            this.pictureBox2 = new System.Windows.Forms.PictureBox();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.comeToMenu = new System.Windows.Forms.Label();
             this.panel1.SuspendLayout();
+            this.panel2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
-            this.panel2.SuspendLayout();
             this.SuspendLayout();
             // 
             // panel1
             // 
             this.panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(173)))), ((int)(((byte)(149)))), ((int)(((byte)(149)))));
             this.panel1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
+            this.panel1.Controls.Add(this.comeToMenu);
             this.panel1.Controls.Add(this.buttonLogin);
             this.panel1.Controls.Add(this.passField);
             this.panel1.Controls.Add(this.pictureBox2);
@@ -90,17 +92,6 @@
             this.passField.UseSystemPasswordChar = true;
             this.passField.TextChanged += new System.EventHandler(this.textBox2_TextChanged);
             // 
-            // pictureBox2
-            // 
-            this.pictureBox2.Image = global::курсовая_кпо.Properties.Resources.lock_icon;
-            this.pictureBox2.InitialImage = global::курсовая_кпо.Properties.Resources.user_icon;
-            this.pictureBox2.Location = new System.Drawing.Point(27, 177);
-            this.pictureBox2.Name = "pictureBox2";
-            this.pictureBox2.Size = new System.Drawing.Size(64, 64);
-            this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox2.TabIndex = 3;
-            this.pictureBox2.TabStop = false;
-            // 
             // loginField
             // 
             this.loginField.Font = new System.Drawing.Font("Imprint MT Shadow", 24F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -109,18 +100,6 @@
             this.loginField.Name = "loginField";
             this.loginField.Size = new System.Drawing.Size(220, 45);
             this.loginField.TabIndex = 2;
-            // 
-            // pictureBox1
-            // 
-            this.pictureBox1.Image = global::курсовая_кпо.Properties.Resources.user_icon;
-            this.pictureBox1.InitialImage = global::курсовая_кпо.Properties.Resources.user_icon;
-            this.pictureBox1.Location = new System.Drawing.Point(27, 94);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(64, 64);
-            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox1.TabIndex = 1;
-            this.pictureBox1.TabStop = false;
-            this.pictureBox1.Click += new System.EventHandler(this.pictureBox1_Click);
             // 
             // panel2
             // 
@@ -161,6 +140,39 @@
             this.label1.Text = "Авторизация";
             this.label1.TextAlign = System.Drawing.ContentAlignment.TopCenter;
             // 
+            // pictureBox2
+            // 
+            this.pictureBox2.Image = global::курсовая_кпо.Properties.Resources.lock_icon;
+            this.pictureBox2.InitialImage = global::курсовая_кпо.Properties.Resources.user_icon;
+            this.pictureBox2.Location = new System.Drawing.Point(27, 177);
+            this.pictureBox2.Name = "pictureBox2";
+            this.pictureBox2.Size = new System.Drawing.Size(64, 64);
+            this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox2.TabIndex = 3;
+            this.pictureBox2.TabStop = false;
+            // 
+            // pictureBox1
+            // 
+            this.pictureBox1.Image = global::курсовая_кпо.Properties.Resources.user_icon;
+            this.pictureBox1.InitialImage = global::курсовая_кпо.Properties.Resources.user_icon;
+            this.pictureBox1.Location = new System.Drawing.Point(27, 94);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(64, 64);
+            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox1.TabIndex = 1;
+            this.pictureBox1.TabStop = false;
+            this.pictureBox1.Click += new System.EventHandler(this.pictureBox1_Click);
+            // 
+            // comeToMenu
+            // 
+            this.comeToMenu.AutoSize = true;
+            this.comeToMenu.Location = new System.Drawing.Point(306, 371);
+            this.comeToMenu.Name = "comeToMenu";
+            this.comeToMenu.Size = new System.Drawing.Size(79, 13);
+            this.comeToMenu.TabIndex = 13;
+            this.comeToMenu.Text = "Назад в меню";
+            this.comeToMenu.Click += new System.EventHandler(this.comeToMenu_Click);
+            // 
             // LoginForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -173,10 +185,10 @@
             this.Load += new System.EventHandler(this.LoginForm_Load);
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.panel2.ResumeLayout(false);
             this.panel2.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -192,5 +204,6 @@
         private System.Windows.Forms.TextBox passField;
         private System.Windows.Forms.PictureBox pictureBox2;
         private System.Windows.Forms.TextBox loginField;
+        private System.Windows.Forms.Label comeToMenu;
     }
 }

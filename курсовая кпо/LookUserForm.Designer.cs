@@ -35,7 +35,7 @@
             this.RedactUserRecords = new System.Windows.Forms.Label();
             this.deleteUser = new System.Windows.Forms.Label();
             this.label7 = new System.Windows.Forms.Label();
-            this.label6 = new System.Windows.Forms.Label();
+            this.comeToMenu = new System.Windows.Forms.Label();
             this.label5 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
@@ -92,7 +92,7 @@
             this.panel1.Controls.Add(this.RedactUserRecords);
             this.panel1.Controls.Add(this.deleteUser);
             this.panel1.Controls.Add(this.label7);
-            this.panel1.Controls.Add(this.label6);
+            this.panel1.Controls.Add(this.comeToMenu);
             this.panel1.Controls.Add(this.label5);
             this.panel1.Controls.Add(this.label4);
             this.panel1.Controls.Add(this.label3);
@@ -137,15 +137,15 @@
             this.label7.Text = "Добавить пользователя";
             this.label7.Click += new System.EventHandler(this.label7_Click);
             // 
-            // label6
+            // comeToMenu
             // 
-            this.label6.AutoSize = true;
-            this.label6.Location = new System.Drawing.Point(555, 423);
-            this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(79, 13);
-            this.label6.TabIndex = 9;
-            this.label6.Text = "Назад в меню";
-            this.label6.Click += new System.EventHandler(this.label6_Click);
+            this.comeToMenu.AutoSize = true;
+            this.comeToMenu.Location = new System.Drawing.Point(555, 423);
+            this.comeToMenu.Name = "comeToMenu";
+            this.comeToMenu.Size = new System.Drawing.Size(79, 13);
+            this.comeToMenu.TabIndex = 9;
+            this.comeToMenu.Text = "Назад в меню";
+            this.comeToMenu.Click += new System.EventHandler(this.label6_Click);
             // 
             // label5
             // 
@@ -251,7 +251,7 @@
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.Label label6;
+        private System.Windows.Forms.Label comeToMenu;
         private System.Windows.Forms.Label label7;
         private System.Windows.Forms.Label RedactUserRecords;
         private System.Windows.Forms.Label deleteUser;

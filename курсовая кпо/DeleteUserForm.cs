@@ -21,37 +21,30 @@ namespace курсовая_кпо
 
         private void label6_Click(object sender, EventArgs e)
         {
-
+            this.Hide();
+            MenuForm menuForm = new MenuForm();
+            menuForm.Show();
         }
 
         private void buttonDeleteUser_Click(object sender, EventArgs e)
         {
-            var result = MessageBox.Show($"Вы действительно хотите удалить данного пользователя [{idField.Text}]  ?", "УДАЛЕНИЕ",
-                                MessageBoxButtons.YesNo,
-                                MessageBoxIcon.Question);
-            if (result == DialogResult.Yes)
+            DataBase db = new DataBase();
+            MySqlCommand command = new MySqlCommand("DELETE FROM `users` WHERE `users`.`id` = @id", db.getConnection());
+
+            command.Parameters.Add("@id", MySqlDbType.Int32).Value = idField.Text;
+            
+
+            db.openConnection();
+
+            if (command.ExecuteNonQuery() == 1)
             {
-                String idUser = idField.Text;
-                try
-                {
-                    DataBase dataBase = new DataBase();
-                    MySqlCommand command = new MySqlCommand("DELETE FROM users WHERE id = @uID ", dataBase.getConnection());
-                    command.Parameters.Add("@uID", MySqlDbType.VarChar).Value = idUser;
-                    dataBase.openConnection();
-                    //command.ExecuteNonQuery();
-                    if (command.ExecuteNonQuery() == 1)
-                        MessageBox.Show("Успешно !", "УДАЛЕНИЕ", MessageBoxButtons.OK, MessageBoxIcon.None);
-                    else
-                        MessageBox.Show("Ошибка !", "УДАЛЕНИЕ", MessageBoxButtons.OK, MessageBoxIcon.Error);
-                    dataBase.closeConnection();
-                   
-                }
-                catch
-                {
-                    MessageBox.Show("Ошибка !", "УДАЛЕНИЕ", MessageBoxButtons.OK, MessageBoxIcon.Error);
-                    
-                }
+                MessageBox.Show("Пользователь удален");
             }
+            else
+                MessageBox.Show("Пользователь не удален");
+
+            db.closeConnection();
+
         }
 
         private void idField_TextChanged(object sender, EventArgs e)
