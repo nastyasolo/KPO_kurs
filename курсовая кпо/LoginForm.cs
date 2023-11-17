@@ -38,7 +38,7 @@ namespace курсовая_кпо
 
         private void closeButton_Click(object sender, EventArgs e)
         {
-            this.Close();
+            Application.Exit();
         }
 
         private void textBox2_TextChanged(object sender, EventArgs e)
@@ -91,7 +91,10 @@ namespace курсовая_кпо
 
             if(table.Rows.Count > 0 )
             {
-                MessageBox.Show("Успешно!");
+               /// MessageBox.Show("Успешно!");
+                this.Hide();
+                MenuForm menuForm = new MenuForm();
+                menuForm.Show();
             }
             else
             {
