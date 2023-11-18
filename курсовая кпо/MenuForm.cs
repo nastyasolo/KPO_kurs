@@ -50,5 +50,19 @@ namespace курсовая_кпо
             AddTrainForm addTrainForm = new AddTrainForm();
             addTrainForm.Show();
         }
+
+        private void buttonDeleteData_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            DeleteTrainForm deleteTrainForm = new DeleteTrainForm();
+            deleteTrainForm.Show();
+        }
+
+        private void buttonRedactData_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            EditTrainForm editTrainForm = new EditTrainForm();
+            editTrainForm.Show();
+        }
     }
 }

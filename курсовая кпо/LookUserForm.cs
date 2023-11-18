@@ -47,10 +47,10 @@ namespace курсовая_кпо
                     ListUser.Add(user);
                 }
                 //ListUser.Sort();
-                //String columns = "{0, -20}{1, -30}{2, -30}{3, -20}";
+                // String columns = "{0, -20}{1, -30}{2, -30}{3, -20}";
                 for (int i = 0; i < ListUser.Count; i++)
                 {
-                    //listBox1.Items.Add(String.Format(columns, $"{ListUser[i].id}-", $"{ListUser[i].login}-", $"{ListUser[i].FIO}-", $"{ListUser[i].role}-"));
+                    //listBox.Items.Add(String.Format(columns, $"{ListUser[i].id}-", $"{ListUser[i].login}-", $"{ListUser[i].password}-", $"{ListUser[i].role}-"));
                     listBox1.Items.Add($"{ListUser[i].id}");
                     listBox2.Items.Add($"{ListUser[i].login}");
                     listBox3.Items.Add($"{ListUser[i].password}");

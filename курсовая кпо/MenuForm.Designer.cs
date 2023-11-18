@@ -142,6 +142,7 @@
             this.buttonRedactData.TabIndex = 18;
             this.buttonRedactData.Text = "Редактировать запись";
             this.buttonRedactData.UseVisualStyleBackColor = false;
+            this.buttonRedactData.Click += new System.EventHandler(this.buttonRedactData_Click);
             // 
             // buttonDeleteData
             // 
@@ -159,6 +160,7 @@
             this.buttonDeleteData.TabIndex = 17;
             this.buttonDeleteData.Text = "Удалить запись";
             this.buttonDeleteData.UseVisualStyleBackColor = false;
+            this.buttonDeleteData.Click += new System.EventHandler(this.buttonDeleteData_Click);
             // 
             // buttonAddData
             // 
