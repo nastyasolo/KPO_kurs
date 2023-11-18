@@ -85,5 +85,12 @@ namespace курсовая_кпо
             DeleteUserForm deleteUserForm = new DeleteUserForm();
             deleteUserForm.Show();
         }
+
+        private void RedactUserRecords_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            EditUserForm editUserForm = new EditUserForm(); 
+            editUserForm.Show();
+        }
     }
 }

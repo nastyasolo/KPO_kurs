@@ -43,5 +43,12 @@ namespace курсовая_кпо
             lookUserForm.Show();
 
         }
+
+        private void buttonAddData_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            AddTrainForm addTrainForm = new AddTrainForm();
+            addTrainForm.Show();
+        }
     }
 }

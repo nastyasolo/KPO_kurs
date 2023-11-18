@@ -20,9 +20,9 @@ namespace курсовая_кпо
 
         public string price { get; set; }
 
-        public string availableTicket { get; set; }
+        public int availableTicket { get; set; }
 
-        public string soldTicket { get; set; }
+        public int soldTicket { get; set; }
 
     }
 }

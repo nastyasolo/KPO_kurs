@@ -22,6 +22,8 @@ namespace курсовая_кпо
         private void label6_Click(object sender, EventArgs e)
         {
             this.Hide();
+            //LookUserForm lookUserForm = new LookUserForm();     
+            //lookUserForm.Hide();
             MenuForm menuForm = new MenuForm();
             menuForm.Show();
         }
@@ -44,6 +46,7 @@ namespace курсовая_кпо
                 MessageBox.Show("Пользователь не удален");
 
             db.closeConnection();
+
 
         }
 

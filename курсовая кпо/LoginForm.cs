@@ -75,6 +75,7 @@ namespace курсовая_кпо
         {
             String loginUser = loginField.Text;
             String passUser = passField.Text;
+            String roleUser = "0";
 
             DataBase db = new DataBase();
 
@@ -89,12 +90,34 @@ namespace курсовая_кпо
             adapter.SelectCommand = command;
             adapter.Fill(table);
 
-            if(table.Rows.Count > 0 )
+            db.openConnection();
+            MySqlDataReader reader = command.ExecuteReader();
+
+            while (reader.Read())
+            {
+                roleUser = Convert.ToString(reader[3]);
+            }
+            db.closeConnection();
+
+            if (table.Rows.Count > 0 )
             {
                /// MessageBox.Show("Успешно!");
-                this.Hide();
-                MenuForm menuForm = new MenuForm();
-                menuForm.Show();
+               
+                if (roleUser == "1")
+                {
+                    this.Hide();
+                    MenuForm menuForm = new MenuForm();
+                    menuForm.Show();
+                }
+                else if (roleUser == "0")
+                {
+                    this.Hide();
+                    UserMenuForm menuForm = new UserMenuForm();
+                    menuForm.Show();
+                }
+                else
+                    MessageBox.Show("Оштбка!");
+
             }
             else
             {
@@ -104,7 +127,9 @@ namespace курсовая_кпо
 
         private void comeToMenu_Click(object sender, EventArgs e)
         {
+
             this.Hide();
+ 
             MenuForm menuForm = new MenuForm();
             menuForm.Show();
         }

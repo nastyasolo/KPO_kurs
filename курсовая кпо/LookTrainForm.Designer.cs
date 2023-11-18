@@ -1,6 +1,6 @@
 ﻿namespace курсовая_кпо
 {
-    partial class LookUserForm
+    partial class LookTrainForm
     {
         /// <summary>
         /// Required designer variable.
@@ -28,9 +28,6 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.panel2 = new System.Windows.Forms.Panel();
-            this.closeButton = new System.Windows.Forms.Label();
-            this.label1 = new System.Windows.Forms.Label();
             this.panel1 = new System.Windows.Forms.Panel();
             this.RedactUserRecords = new System.Windows.Forms.Label();
             this.deleteUser = new System.Windows.Forms.Label();
@@ -44,46 +41,12 @@
             this.listBox3 = new System.Windows.Forms.ListBox();
             this.listBox2 = new System.Windows.Forms.ListBox();
             this.listBox1 = new System.Windows.Forms.ListBox();
-            this.panel2.SuspendLayout();
+            this.panel2 = new System.Windows.Forms.Panel();
+            this.closeButton = new System.Windows.Forms.Label();
+            this.label1 = new System.Windows.Forms.Label();
             this.panel1.SuspendLayout();
+            this.panel2.SuspendLayout();
             this.SuspendLayout();
-            // 
-            // panel2
-            // 
-            this.panel2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(109)))), ((int)(((byte)(109)))));
-            this.panel2.Controls.Add(this.closeButton);
-            this.panel2.Controls.Add(this.label1);
-            this.panel2.Dock = System.Windows.Forms.DockStyle.Top;
-            this.panel2.Location = new System.Drawing.Point(0, 0);
-            this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(637, 65);
-            this.panel2.TabIndex = 0;
-            // 
-            // closeButton
-            // 
-            this.closeButton.AutoSize = true;
-            this.closeButton.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.closeButton.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.closeButton.ForeColor = System.Drawing.SystemColors.InfoText;
-            this.closeButton.Location = new System.Drawing.Point(613, 0);
-            this.closeButton.Name = "closeButton";
-            this.closeButton.Size = new System.Drawing.Size(24, 29);
-            this.closeButton.TabIndex = 1;
-            this.closeButton.Text = "x";
-            this.closeButton.TextAlign = System.Drawing.ContentAlignment.TopRight;
-            this.closeButton.Click += new System.EventHandler(this.closeButton_Click);
-            // 
-            // label1
-            // 
-            this.label1.Dock = System.Windows.Forms.DockStyle.Top;
-            this.label1.Font = new System.Drawing.Font("Nirmala UI", 26.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.ForeColor = System.Drawing.SystemColors.Desktop;
-            this.label1.Location = new System.Drawing.Point(0, 0);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(637, 59);
-            this.label1.TabIndex = 0;
-            this.label1.Text = "Список пользователей";
-            this.label1.TextAlign = System.Drawing.ContentAlignment.TopCenter;
             // 
             // panel1
             // 
@@ -105,8 +68,8 @@
             this.panel1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panel1.Location = new System.Drawing.Point(0, 0);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(637, 445);
-            this.panel1.TabIndex = 2;
+            this.panel1.Size = new System.Drawing.Size(1074, 643);
+            this.panel1.TabIndex = 3;
             // 
             // RedactUserRecords
             // 
@@ -116,7 +79,6 @@
             this.RedactUserRecords.Size = new System.Drawing.Size(84, 13);
             this.RedactUserRecords.TabIndex = 12;
             this.RedactUserRecords.Text = "Редактировать";
-            this.RedactUserRecords.Click += new System.EventHandler(this.RedactUserRecords_Click);
             // 
             // deleteUser
             // 
@@ -126,7 +88,6 @@
             this.deleteUser.Size = new System.Drawing.Size(124, 13);
             this.deleteUser.TabIndex = 11;
             this.deleteUser.Text = "Удалить пользователя";
-            this.deleteUser.Click += new System.EventHandler(this.deleteUser_Click);
             // 
             // label7
             // 
@@ -136,7 +97,6 @@
             this.label7.Size = new System.Drawing.Size(131, 13);
             this.label7.TabIndex = 10;
             this.label7.Text = "Добавить пользователя";
-            this.label7.Click += new System.EventHandler(this.label7_Click);
             // 
             // comeToMenu
             // 
@@ -146,7 +106,6 @@
             this.comeToMenu.Size = new System.Drawing.Size(79, 13);
             this.comeToMenu.TabIndex = 9;
             this.comeToMenu.Text = "Назад в меню";
-            this.comeToMenu.Click += new System.EventHandler(this.label6_Click);
             // 
             // label5
             // 
@@ -220,41 +179,75 @@
             this.listBox1.Size = new System.Drawing.Size(76, 316);
             this.listBox1.TabIndex = 1;
             // 
-            // LookUserForm
+            // panel2
+            // 
+            this.panel2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(109)))), ((int)(((byte)(109)))));
+            this.panel2.Controls.Add(this.closeButton);
+            this.panel2.Controls.Add(this.label1);
+            this.panel2.Dock = System.Windows.Forms.DockStyle.Top;
+            this.panel2.Location = new System.Drawing.Point(0, 0);
+            this.panel2.Name = "panel2";
+            this.panel2.Size = new System.Drawing.Size(1074, 65);
+            this.panel2.TabIndex = 0;
+            // 
+            // closeButton
+            // 
+            this.closeButton.AutoSize = true;
+            this.closeButton.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.closeButton.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.closeButton.ForeColor = System.Drawing.SystemColors.InfoText;
+            this.closeButton.Location = new System.Drawing.Point(1047, 0);
+            this.closeButton.Name = "closeButton";
+            this.closeButton.Size = new System.Drawing.Size(24, 29);
+            this.closeButton.TabIndex = 1;
+            this.closeButton.Text = "x";
+            this.closeButton.TextAlign = System.Drawing.ContentAlignment.TopRight;
+            // 
+            // label1
+            // 
+            this.label1.Dock = System.Windows.Forms.DockStyle.Top;
+            this.label1.Font = new System.Drawing.Font("Nirmala UI", 26.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.ForeColor = System.Drawing.SystemColors.Desktop;
+            this.label1.Location = new System.Drawing.Point(0, 0);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(1074, 59);
+            this.label1.TabIndex = 0;
+            this.label1.Text = "Поезда";
+            this.label1.TextAlign = System.Drawing.ContentAlignment.TopCenter;
+            // 
+            // LookTrainForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(637, 445);
+            this.ClientSize = new System.Drawing.Size(1074, 643);
             this.Controls.Add(this.panel1);
-            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
-            this.Name = "LookUserForm";
-            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "LookUserForm";
-            this.panel2.ResumeLayout(false);
-            this.panel2.PerformLayout();
+            this.Name = "LookTrainForm";
+            this.Text = "LookTrainForm";
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
+            this.panel2.ResumeLayout(false);
+            this.panel2.PerformLayout();
             this.ResumeLayout(false);
 
         }
 
         #endregion
 
-        private System.Windows.Forms.Panel panel2;
-        private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.Label closeButton;
         private System.Windows.Forms.Panel panel1;
-        private System.Windows.Forms.ListBox listBox4;
-        private System.Windows.Forms.ListBox listBox3;
-        private System.Windows.Forms.ListBox listBox2;
-        private System.Windows.Forms.ListBox listBox1;
+        private System.Windows.Forms.Label RedactUserRecords;
+        private System.Windows.Forms.Label deleteUser;
+        private System.Windows.Forms.Label label7;
+        private System.Windows.Forms.Label comeToMenu;
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.Label comeToMenu;
-        private System.Windows.Forms.Label label7;
-        private System.Windows.Forms.Label RedactUserRecords;
-        private System.Windows.Forms.Label deleteUser;
+        private System.Windows.Forms.ListBox listBox4;
+        private System.Windows.Forms.ListBox listBox3;
+        private System.Windows.Forms.ListBox listBox2;
+        private System.Windows.Forms.ListBox listBox1;
+        private System.Windows.Forms.Panel panel2;
+        private System.Windows.Forms.Label closeButton;
+        private System.Windows.Forms.Label label1;
     }
 }
