@@ -64,5 +64,12 @@ namespace курсовая_кпо
             EditTrainForm editTrainForm = new EditTrainForm();
             editTrainForm.Show();
         }
+
+        private void buttonLookData_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            LookTrainForm lookTrainForm = new LookTrainForm();
+            lookTrainForm.Show();
+        }
     }
 }

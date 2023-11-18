@@ -196,6 +196,7 @@
             this.buttonLookData.TabIndex = 15;
             this.buttonLookData.Text = "Просмотреть данные";
             this.buttonLookData.UseVisualStyleBackColor = false;
+            this.buttonLookData.Click += new System.EventHandler(this.buttonLookData_Click);
             // 
             // panel2
             // 
