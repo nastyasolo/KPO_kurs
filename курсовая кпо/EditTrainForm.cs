@@ -13,9 +13,11 @@ namespace курсовая_кпо
 {
     public partial class EditTrainForm : Form
     {
-        public EditTrainForm()
+        String role;
+        public EditTrainForm(string role)
         {
             InitializeComponent();
+            this.role = role;
         }
 
         private void closeButton_Click(object sender, EventArgs e)
@@ -26,11 +28,11 @@ namespace курсовая_кпо
         private void goToMenu_Click(object sender, EventArgs e)
         {
             this.Hide();
-            MenuForm menuForm = new MenuForm();
+            MenuForm menuForm = new MenuForm(role);
             menuForm.Show();
         }
 
-        private void buttonEditUser_Click(object sender, EventArgs e)
+        private void buttonEditTrain_Click(object sender, EventArgs e)
         {
             DataBase db = new DataBase();
             MySqlCommand command = new MySqlCommand("UPDATE `trains` SET `number` = @newNumber, `endStation` = @newEndSt, `date` = @newDate, `timeStart` = @newTS, `timeEnd` = @newTE, `price` = @newPrice, `availableTicket` = @newAT, `soldTicket` = @newST WHERE `trains`.`number` = @number", db.getConnection());

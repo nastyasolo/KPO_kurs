@@ -12,9 +12,15 @@ namespace курсовая_кпо
 {
     public partial class MenuForm : Form
     {
-        public MenuForm()
+        String role;
+
+        public MenuForm(String role)
         {
             InitializeComponent();
+            this.role = role;
+            if (role =="0" ) {
+             AdminPanel.Visible = false;
+            }
         }
 
         private void label2_Click(object sender, EventArgs e)
@@ -39,7 +45,7 @@ namespace курсовая_кпо
         private void label4_Click(object sender, EventArgs e)
         {
             this.Hide();
-            LookUserForm lookUserForm = new LookUserForm();
+            LookUserForm lookUserForm = new LookUserForm(role);
             lookUserForm.Show();
 
         }
@@ -47,29 +53,38 @@ namespace курсовая_кпо
         private void buttonAddData_Click(object sender, EventArgs e)
         {
             this.Hide();
-            AddTrainForm addTrainForm = new AddTrainForm();
+            AddTrainForm addTrainForm = new AddTrainForm(role);
             addTrainForm.Show();
         }
 
         private void buttonDeleteData_Click(object sender, EventArgs e)
         {
             this.Hide();
-            DeleteTrainForm deleteTrainForm = new DeleteTrainForm();
+            DeleteTrainForm deleteTrainForm = new DeleteTrainForm(role);
             deleteTrainForm.Show();
         }
 
         private void buttonRedactData_Click(object sender, EventArgs e)
         {
             this.Hide();
-            EditTrainForm editTrainForm = new EditTrainForm();
+            EditTrainForm editTrainForm = new EditTrainForm(role);
             editTrainForm.Show();
         }
 
         private void buttonLookData_Click(object sender, EventArgs e)
         {
             this.Hide();
-            LookTrainForm lookTrainForm = new LookTrainForm();
+            LookTrainForm lookTrainForm = new LookTrainForm(role);
             lookTrainForm.Show();
         }
+
+        private void buttonSearchData_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            SearchTrainForm searchTrainForm = new SearchTrainForm(role);
+            searchTrainForm.Show();
+        }
+
+        
     }
 }

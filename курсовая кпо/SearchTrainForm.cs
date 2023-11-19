@@ -11,14 +11,29 @@ using System.Windows.Forms;
 
 namespace курсовая_кпо
 {
-    public partial class LookTrainForm : Form
+    public partial class SearchTrainForm : Form
     {
         String role;
-        public LookTrainForm(String role)
+        public SearchTrainForm(String role)
         {
             InitializeComponent();
             this.role = role;
-            panel3.Visible = false;
+        }
+
+        private void closeButton_Click(object sender, EventArgs e)
+        {
+            Application.Exit();
+        }
+
+        private void comeToMenu_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            MenuForm menuForm = new MenuForm(role);
+            menuForm.ShowDialog();
+        }
+
+        private void buttonSearchTrain_Click(object sender, EventArgs e)
+        {
             FillTrainList();
         }
         private void FillTrainList()
@@ -38,7 +53,8 @@ namespace курсовая_кпо
                 DataBase dataBase = new DataBase();
                 DataTable table = new DataTable();
                 MySqlDataAdapter adapter = new MySqlDataAdapter();
-                MySqlCommand command = new MySqlCommand("SELECT * FROM trains", dataBase.getConnection());
+                MySqlCommand command = new MySqlCommand("SELECT * FROM `trains` WHERE `number` LIKE @number", dataBase.getConnection());
+                command.Parameters.Add("@number", MySqlDbType.VarChar).Value = numberTrainField.Text;
                 adapter.SelectCommand = command;
                 adapter.Fill(table);
 
@@ -74,76 +90,6 @@ namespace курсовая_кпо
                 }
             }
             catch { }
-        }
-
-        private void closeButton_Click(object sender, EventArgs e)
-        {
-            Application.Exit();
-        }
-
-        private void comeToMenu_Click(object sender, EventArgs e)
-        {
-            this.Hide();
-            MenuForm menuForm = new MenuForm(role);
-            menuForm.ShowDialog();
-        }
-
-        private void unVPanel_Click(object sender, EventArgs e)
-        {
-            panel3.Visible = false;
-        }
-
-        private void listBox1_SelectedIndexChanged(object sender, EventArgs e)
-        {
-            try
-            {
-
-                var indexSelect = listBox1.SelectedIndex;
-                numberTrainField.Text = listBox1.Items[indexSelect].ToString();
-                endStationField.Text = listBox2.Items[indexSelect].ToString();
-                dateField.Text = listBox3.Items[indexSelect].ToString();
-                startTimeField.Text = listBox4.Items[indexSelect].ToString();
-                endTimeField.Text = listBox5.Items[indexSelect].ToString();
-                priceField.Text = listBox6.Items[indexSelect].ToString();
-                availableTicketField.Text = listBox7.Items[indexSelect].ToString();
-                soldTicketField.Text = listBox8.Items[indexSelect].ToString();
-
-                panel3.Visible = true;
-            }
-            catch { }
-        }
-
-        private void buttonBuyTicket_Click(object sender, EventArgs e)
-        {
-            int numOfTicket = Convert.ToInt32(numOfTicketField.Text);
-            int availableTicket= Convert.ToInt32(availableTicketField.Text);
-            int soldTicket= Convert.ToInt32(soldTicketField.Text);
-
-            availableTicket -= numOfTicket;
-            soldTicket += numOfTicket;
-
-            DataBase db = new DataBase();
-            MySqlCommand command = new MySqlCommand("UPDATE `trains` SET `availableTicket` = @newAT, `soldTicket` = @newST WHERE `trains`.`number` = @number AND `trains`.`endStation` = @endSt", db.getConnection());
-
-            command.Parameters.Add("@number", MySqlDbType.Int32).Value = numberTrainField.Text;
-            command.Parameters.Add("@endSt", MySqlDbType.VarChar).Value = endStationField.Text;
-            command.Parameters.Add("@newAT", MySqlDbType.VarChar).Value = availableTicket;
-            command.Parameters.Add("@newST", MySqlDbType.VarChar).Value = soldTicket;
-
-            db.openConnection();
-
-            if (command.ExecuteNonQuery() == 1)
-            {
-                MessageBox.Show("Куплено");
-                FillTrainList();
-                panel3.Visible = false;
-
-            }
-            else
-                MessageBox.Show("Ошибка!");
-
-            db.closeConnection();
-
         }
     }
 }

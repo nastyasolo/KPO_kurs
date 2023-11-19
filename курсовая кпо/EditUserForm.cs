@@ -13,9 +13,11 @@ namespace курсовая_кпо
 {
     public partial class EditUserForm : Form
     {
-        public EditUserForm()
+        String role;
+        public EditUserForm(string role)
         {
             InitializeComponent();
+            this.role = role;
         }
 
         private void label6_Click(object sender, EventArgs e)
@@ -23,7 +25,7 @@ namespace курсовая_кпо
             this.Hide();
             //LookUserForm lookUserForm = new LookUserForm();
             //lookUserForm.Hide();
-            MenuForm menuForm = new MenuForm();
+            MenuForm menuForm = new MenuForm(role);
             menuForm.Show();
         }
 

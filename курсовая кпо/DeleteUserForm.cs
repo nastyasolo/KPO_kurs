@@ -14,9 +14,12 @@ namespace курсовая_кпо
 {
     public partial class DeleteUserForm : Form
     {
-        public DeleteUserForm()
+
+        String role;
+        public DeleteUserForm(string role)
         {
             InitializeComponent();
+            this.role = role;
         }
 
         private void label6_Click(object sender, EventArgs e)
@@ -24,7 +27,7 @@ namespace курсовая_кпо
             this.Hide();
             //LookUserForm lookUserForm = new LookUserForm();     
             //lookUserForm.Hide();
-            MenuForm menuForm = new MenuForm();
+            MenuForm menuForm = new MenuForm(role);
             menuForm.Show();
         }
 

@@ -103,20 +103,11 @@ namespace курсовая_кпо
             {
                /// MessageBox.Show("Успешно!");
                
-                if (roleUser == "1")
-                {
-                    this.Hide();
-                    MenuForm menuForm = new MenuForm();
-                    menuForm.Show();
-                }
-                else if (roleUser == "0")
-                {
-                    this.Hide();
-                    UserMenuForm menuForm = new UserMenuForm();
-                    menuForm.Show();
-                }
-                else
-                    MessageBox.Show("Оштбка!");
+                
+                 this.Hide();
+                 MenuForm menuForm = new MenuForm(roleUser);
+                 menuForm.Show();
+              
 
             }
             else
@@ -125,13 +116,6 @@ namespace курсовая_кпо
             }
         }
 
-        private void comeToMenu_Click(object sender, EventArgs e)
-        {
-
-            this.Hide();
- 
-            MenuForm menuForm = new MenuForm();
-            menuForm.Show();
-        }
+        
     }
 }

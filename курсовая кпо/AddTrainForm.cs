@@ -13,9 +13,11 @@ namespace курсовая_кпо
 {
     public partial class AddTrainForm : Form
     {
-        public AddTrainForm()
+        String role;
+        public AddTrainForm(String role)
         {
             InitializeComponent();
+            this.role = role;
         }
 
         private void closeButton_Click(object sender, EventArgs e)
@@ -26,7 +28,7 @@ namespace курсовая_кпо
         private void goToMenu_Click(object sender, EventArgs e)
         {
             this.Hide();
-            MenuForm menuForm = new MenuForm();
+            MenuForm menuForm = new MenuForm(role);
             menuForm.Show();
         }
 

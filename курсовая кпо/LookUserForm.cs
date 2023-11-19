@@ -13,10 +13,14 @@ namespace курсовая_кпо
 {
     public partial class LookUserForm : Form
     {
-        public LookUserForm()
+        String role;
+
+        public LookUserForm(string role)
         {
             InitializeComponent();
+            this.role = role;
             FillUserList();
+          
         }
         private void FillUserList()
         {
@@ -68,28 +72,28 @@ namespace курсовая_кпо
         private void label6_Click(object sender, EventArgs e)
         {
             this.Hide();
-            MenuForm menuForm = new MenuForm(); 
+            MenuForm menuForm = new MenuForm(role); 
             menuForm.Show();
         }
 
         private void label7_Click(object sender, EventArgs e)
         {
             this.Hide();
-            AddUserForm addUserForm = new AddUserForm();
+            AddUserForm addUserForm = new AddUserForm(role);
             addUserForm.Show();
         }
 
         private void deleteUser_Click(object sender, EventArgs e)
         {
             this.Hide();
-            DeleteUserForm deleteUserForm = new DeleteUserForm();
+            DeleteUserForm deleteUserForm = new DeleteUserForm(role);
             deleteUserForm.Show();
         }
 
         private void RedactUserRecords_Click(object sender, EventArgs e)
         {
             this.Hide();
-            EditUserForm editUserForm = new EditUserForm(); 
+            EditUserForm editUserForm = new EditUserForm(role); 
             editUserForm.Show();
         }
     }

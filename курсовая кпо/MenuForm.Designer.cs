@@ -32,7 +32,6 @@
             this.UsersDataL = new System.Windows.Forms.Label();
             this.buttonSortData = new System.Windows.Forms.Button();
             this.buttonSearchData = new System.Windows.Forms.Button();
-            this.buttonDoAimData = new System.Windows.Forms.Button();
             this.buttonRedactData = new System.Windows.Forms.Button();
             this.buttonDeleteData = new System.Windows.Forms.Button();
             this.buttonAddData = new System.Windows.Forms.Button();
@@ -40,21 +39,19 @@
             this.panel2 = new System.Windows.Forms.Panel();
             this.closeButton = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
+            this.AdminPanel = new System.Windows.Forms.Panel();
             this.MenuPanel.SuspendLayout();
             this.panel2.SuspendLayout();
+            this.AdminPanel.SuspendLayout();
             this.SuspendLayout();
             // 
             // MenuPanel
             // 
             this.MenuPanel.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(173)))), ((int)(((byte)(149)))), ((int)(((byte)(149)))));
             this.MenuPanel.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
-            this.MenuPanel.Controls.Add(this.UsersDataL);
+            this.MenuPanel.Controls.Add(this.AdminPanel);
             this.MenuPanel.Controls.Add(this.buttonSortData);
             this.MenuPanel.Controls.Add(this.buttonSearchData);
-            this.MenuPanel.Controls.Add(this.buttonDoAimData);
-            this.MenuPanel.Controls.Add(this.buttonRedactData);
-            this.MenuPanel.Controls.Add(this.buttonDeleteData);
-            this.MenuPanel.Controls.Add(this.buttonAddData);
             this.MenuPanel.Controls.Add(this.buttonLookData);
             this.MenuPanel.Controls.Add(this.panel2);
             this.MenuPanel.Dock = System.Windows.Forms.DockStyle.Fill;
@@ -67,7 +64,7 @@
             // 
             this.UsersDataL.AutoSize = true;
             this.UsersDataL.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.UsersDataL.Location = new System.Drawing.Point(185, 423);
+            this.UsersDataL.Location = new System.Drawing.Point(175, 146);
             this.UsersDataL.Name = "UsersDataL";
             this.UsersDataL.Size = new System.Drawing.Size(234, 24);
             this.UsersDataL.TabIndex = 22;
@@ -84,7 +81,7 @@
             this.buttonSortData.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(192)))));
             this.buttonSortData.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.buttonSortData.Font = new System.Drawing.Font("Times New Roman", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.buttonSortData.Location = new System.Drawing.Point(27, 339);
+            this.buttonSortData.Location = new System.Drawing.Point(27, 194);
             this.buttonSortData.Name = "buttonSortData";
             this.buttonSortData.Size = new System.Drawing.Size(184, 67);
             this.buttonSortData.TabIndex = 21;
@@ -102,29 +99,13 @@
             this.buttonSearchData.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(192)))));
             this.buttonSearchData.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.buttonSearchData.Font = new System.Drawing.Font("Times New Roman", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.buttonSearchData.Location = new System.Drawing.Point(217, 266);
+            this.buttonSearchData.Location = new System.Drawing.Point(217, 120);
             this.buttonSearchData.Name = "buttonSearchData";
             this.buttonSearchData.Size = new System.Drawing.Size(184, 67);
             this.buttonSearchData.TabIndex = 20;
             this.buttonSearchData.Text = "Найти";
             this.buttonSearchData.UseVisualStyleBackColor = false;
-            // 
-            // buttonDoAimData
-            // 
-            this.buttonDoAimData.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(224)))), ((int)(((byte)(192)))));
-            this.buttonDoAimData.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.buttonDoAimData.FlatAppearance.BorderColor = System.Drawing.Color.AntiqueWhite;
-            this.buttonDoAimData.FlatAppearance.BorderSize = 3;
-            this.buttonDoAimData.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(192)))));
-            this.buttonDoAimData.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(192)))));
-            this.buttonDoAimData.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.buttonDoAimData.Font = new System.Drawing.Font("Times New Roman", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.buttonDoAimData.Location = new System.Drawing.Point(217, 193);
-            this.buttonDoAimData.Name = "buttonDoAimData";
-            this.buttonDoAimData.Size = new System.Drawing.Size(184, 67);
-            this.buttonDoAimData.TabIndex = 19;
-            this.buttonDoAimData.Text = "Купить билеты";
-            this.buttonDoAimData.UseVisualStyleBackColor = false;
+            this.buttonSearchData.Click += new System.EventHandler(this.buttonSearchData_Click);
             // 
             // buttonRedactData
             // 
@@ -136,11 +117,11 @@
             this.buttonRedactData.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(192)))));
             this.buttonRedactData.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.buttonRedactData.Font = new System.Drawing.Font("Times New Roman", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.buttonRedactData.Location = new System.Drawing.Point(217, 120);
+            this.buttonRedactData.Location = new System.Drawing.Point(190, 3);
             this.buttonRedactData.Name = "buttonRedactData";
             this.buttonRedactData.Size = new System.Drawing.Size(184, 67);
             this.buttonRedactData.TabIndex = 18;
-            this.buttonRedactData.Text = "Редактировать запись";
+            this.buttonRedactData.Text = "Редактировать рейс";
             this.buttonRedactData.UseVisualStyleBackColor = false;
             this.buttonRedactData.Click += new System.EventHandler(this.buttonRedactData_Click);
             // 
@@ -154,11 +135,11 @@
             this.buttonDeleteData.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(192)))));
             this.buttonDeleteData.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.buttonDeleteData.Font = new System.Drawing.Font("Times New Roman", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.buttonDeleteData.Location = new System.Drawing.Point(27, 266);
+            this.buttonDeleteData.Location = new System.Drawing.Point(0, 76);
             this.buttonDeleteData.Name = "buttonDeleteData";
             this.buttonDeleteData.Size = new System.Drawing.Size(184, 67);
             this.buttonDeleteData.TabIndex = 17;
-            this.buttonDeleteData.Text = "Удалить запись";
+            this.buttonDeleteData.Text = "Удалить рейс";
             this.buttonDeleteData.UseVisualStyleBackColor = false;
             this.buttonDeleteData.Click += new System.EventHandler(this.buttonDeleteData_Click);
             // 
@@ -172,11 +153,11 @@
             this.buttonAddData.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(192)))));
             this.buttonAddData.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.buttonAddData.Font = new System.Drawing.Font("Times New Roman", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.buttonAddData.Location = new System.Drawing.Point(27, 193);
+            this.buttonAddData.Location = new System.Drawing.Point(0, 3);
             this.buttonAddData.Name = "buttonAddData";
             this.buttonAddData.Size = new System.Drawing.Size(184, 67);
             this.buttonAddData.TabIndex = 16;
-            this.buttonAddData.Text = "Добавить запись";
+            this.buttonAddData.Text = "Добавить рейс";
             this.buttonAddData.UseVisualStyleBackColor = false;
             this.buttonAddData.Click += new System.EventHandler(this.buttonAddData_Click);
             // 
@@ -194,7 +175,7 @@
             this.buttonLookData.Name = "buttonLookData";
             this.buttonLookData.Size = new System.Drawing.Size(184, 67);
             this.buttonLookData.TabIndex = 15;
-            this.buttonLookData.Text = "Просмотреть данные";
+            this.buttonLookData.Text = "Просмотреть рейсы / купить билеты";
             this.buttonLookData.UseVisualStyleBackColor = false;
             this.buttonLookData.Click += new System.EventHandler(this.buttonLookData_Click);
             // 
@@ -232,8 +213,19 @@
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(451, 59);
             this.label1.TabIndex = 0;
-            this.label1.Text = "Меню адм";
+            this.label1.Text = "Меню ";
             this.label1.TextAlign = System.Drawing.ContentAlignment.TopCenter;
+            // 
+            // AdminPanel
+            // 
+            this.AdminPanel.Controls.Add(this.UsersDataL);
+            this.AdminPanel.Controls.Add(this.buttonDeleteData);
+            this.AdminPanel.Controls.Add(this.buttonRedactData);
+            this.AdminPanel.Controls.Add(this.buttonAddData);
+            this.AdminPanel.Location = new System.Drawing.Point(27, 266);
+            this.AdminPanel.Name = "AdminPanel";
+            this.AdminPanel.Size = new System.Drawing.Size(412, 178);
+            this.AdminPanel.TabIndex = 23;
             // 
             // MenuForm
             // 
@@ -247,9 +239,10 @@
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = " ";
             this.MenuPanel.ResumeLayout(false);
-            this.MenuPanel.PerformLayout();
             this.panel2.ResumeLayout(false);
             this.panel2.PerformLayout();
+            this.AdminPanel.ResumeLayout(false);
+            this.AdminPanel.PerformLayout();
             this.ResumeLayout(false);
 
         }
@@ -266,7 +259,7 @@
         private System.Windows.Forms.Button buttonLookData;
         private System.Windows.Forms.Button buttonSortData;
         private System.Windows.Forms.Button buttonSearchData;
-        private System.Windows.Forms.Button buttonDoAimData;
         private System.Windows.Forms.Label UsersDataL;
+        private System.Windows.Forms.Panel AdminPanel;
     }
 }
