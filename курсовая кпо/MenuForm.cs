@@ -85,6 +85,11 @@ namespace курсовая_кпо
             searchTrainForm.Show();
         }
 
-        
+        private void SearchTaskTrainButton_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            SearchTaskTrainForm searchTaskTrainForm = new SearchTaskTrainForm(role);
+            searchTaskTrainForm.Show();
+        }
     }
 }

@@ -30,6 +30,20 @@
         {
             this.panel1 = new System.Windows.Forms.Panel();
             this.panel3 = new System.Windows.Forms.Panel();
+            this.label22 = new System.Windows.Forms.Label();
+            this.numOfTicketField = new System.Windows.Forms.TextBox();
+            this.buttonBuyTicket = new System.Windows.Forms.Button();
+            this.unVPanel = new System.Windows.Forms.Label();
+            this.label12 = new System.Windows.Forms.Label();
+            this.label13 = new System.Windows.Forms.Label();
+            this.label14 = new System.Windows.Forms.Label();
+            this.label15 = new System.Windows.Forms.Label();
+            this.label16 = new System.Windows.Forms.Label();
+            this.label17 = new System.Windows.Forms.Label();
+            this.label18 = new System.Windows.Forms.Label();
+            this.label19 = new System.Windows.Forms.Label();
+            this.label20 = new System.Windows.Forms.Label();
+            this.label21 = new System.Windows.Forms.Label();
             this.soldTicketField = new System.Windows.Forms.TextBox();
             this.availableTicketField = new System.Windows.Forms.TextBox();
             this.priceField = new System.Windows.Forms.TextBox();
@@ -60,20 +74,10 @@
             this.panel2 = new System.Windows.Forms.Panel();
             this.closeButton = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
-            this.label12 = new System.Windows.Forms.Label();
-            this.label13 = new System.Windows.Forms.Label();
-            this.label14 = new System.Windows.Forms.Label();
-            this.label15 = new System.Windows.Forms.Label();
-            this.label16 = new System.Windows.Forms.Label();
-            this.label17 = new System.Windows.Forms.Label();
-            this.label18 = new System.Windows.Forms.Label();
-            this.label19 = new System.Windows.Forms.Label();
-            this.label20 = new System.Windows.Forms.Label();
-            this.label21 = new System.Windows.Forms.Label();
-            this.unVPanel = new System.Windows.Forms.Label();
-            this.buttonBuyTicket = new System.Windows.Forms.Button();
-            this.label22 = new System.Windows.Forms.Label();
-            this.numOfTicketField = new System.Windows.Forms.TextBox();
+            this.label23 = new System.Windows.Forms.Label();
+            this.buttonSortNumber = new System.Windows.Forms.Button();
+            this.buttonSortEndStation = new System.Windows.Forms.Button();
+            this.buttonSortPrice = new System.Windows.Forms.Button();
             this.panel1.SuspendLayout();
             this.panel3.SuspendLayout();
             this.panel2.SuspendLayout();
@@ -83,6 +87,10 @@
             // 
             this.panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(173)))), ((int)(((byte)(149)))), ((int)(((byte)(149)))));
             this.panel1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
+            this.panel1.Controls.Add(this.buttonSortPrice);
+            this.panel1.Controls.Add(this.buttonSortEndStation);
+            this.panel1.Controls.Add(this.buttonSortNumber);
+            this.panel1.Controls.Add(this.label23);
             this.panel1.Controls.Add(this.panel3);
             this.panel1.Controls.Add(this.label11);
             this.panel1.Controls.Add(this.label6);
@@ -107,7 +115,7 @@
             this.panel1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panel1.Location = new System.Drawing.Point(0, 0);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(883, 476);
+            this.panel1.Size = new System.Drawing.Size(882, 508);
             this.panel1.TabIndex = 3;
             // 
             // panel3
@@ -138,6 +146,156 @@
             this.panel3.Name = "panel3";
             this.panel3.Size = new System.Drawing.Size(872, 262);
             this.panel3.TabIndex = 39;
+            // 
+            // label22
+            // 
+            this.label22.AutoSize = true;
+            this.label22.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.label22.Location = new System.Drawing.Point(162, 141);
+            this.label22.Name = "label22";
+            this.label22.Size = new System.Drawing.Size(162, 16);
+            this.label22.TabIndex = 64;
+            this.label22.Text = "Количество Билетов";
+            // 
+            // numOfTicketField
+            // 
+            this.numOfTicketField.Font = new System.Drawing.Font("Imprint MT Shadow", 24F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.numOfTicketField.Location = new System.Drawing.Point(160, 162);
+            this.numOfTicketField.Multiline = true;
+            this.numOfTicketField.Name = "numOfTicketField";
+            this.numOfTicketField.Size = new System.Drawing.Size(182, 45);
+            this.numOfTicketField.TabIndex = 63;
+            // 
+            // buttonBuyTicket
+            // 
+            this.buttonBuyTicket.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(224)))), ((int)(((byte)(192)))));
+            this.buttonBuyTicket.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.buttonBuyTicket.FlatAppearance.BorderColor = System.Drawing.Color.AntiqueWhite;
+            this.buttonBuyTicket.FlatAppearance.BorderSize = 3;
+            this.buttonBuyTicket.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(192)))));
+            this.buttonBuyTicket.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(192)))));
+            this.buttonBuyTicket.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.buttonBuyTicket.Font = new System.Drawing.Font("Times New Roman", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.buttonBuyTicket.Location = new System.Drawing.Point(453, 146);
+            this.buttonBuyTicket.Name = "buttonBuyTicket";
+            this.buttonBuyTicket.Size = new System.Drawing.Size(238, 61);
+            this.buttonBuyTicket.TabIndex = 62;
+            this.buttonBuyTicket.Text = "Купить";
+            this.buttonBuyTicket.UseVisualStyleBackColor = false;
+            this.buttonBuyTicket.Click += new System.EventHandler(this.buttonBuyTicket_Click);
+            // 
+            // unVPanel
+            // 
+            this.unVPanel.AutoSize = true;
+            this.unVPanel.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.unVPanel.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.unVPanel.ForeColor = System.Drawing.SystemColors.InfoText;
+            this.unVPanel.Location = new System.Drawing.Point(848, -1);
+            this.unVPanel.Name = "unVPanel";
+            this.unVPanel.Size = new System.Drawing.Size(24, 29);
+            this.unVPanel.TabIndex = 61;
+            this.unVPanel.Text = "x";
+            this.unVPanel.TextAlign = System.Drawing.ContentAlignment.TopRight;
+            this.unVPanel.Click += new System.EventHandler(this.unVPanel_Click);
+            // 
+            // label12
+            // 
+            this.label12.AutoSize = true;
+            this.label12.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.label12.Location = new System.Drawing.Point(787, 44);
+            this.label12.Name = "label12";
+            this.label12.Size = new System.Drawing.Size(61, 16);
+            this.label12.TabIndex = 60;
+            this.label12.Text = "билеты";
+            // 
+            // label13
+            // 
+            this.label13.AutoSize = true;
+            this.label13.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.label13.Location = new System.Drawing.Point(683, 44);
+            this.label13.Name = "label13";
+            this.label13.Size = new System.Drawing.Size(61, 16);
+            this.label13.TabIndex = 59;
+            this.label13.Text = "билеты";
+            // 
+            // label14
+            // 
+            this.label14.AutoSize = true;
+            this.label14.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.label14.Location = new System.Drawing.Point(771, 28);
+            this.label14.Name = "label14";
+            this.label14.Size = new System.Drawing.Size(89, 16);
+            this.label14.TabIndex = 58;
+            this.label14.Text = "проданные";
+            // 
+            // label15
+            // 
+            this.label15.AutoSize = true;
+            this.label15.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.label15.Location = new System.Drawing.Point(668, 28);
+            this.label15.Name = "label15";
+            this.label15.Size = new System.Drawing.Size(94, 16);
+            this.label15.TabIndex = 57;
+            this.label15.Text = "оставшиеся";
+            // 
+            // label16
+            // 
+            this.label16.AutoSize = true;
+            this.label16.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.label16.Location = new System.Drawing.Point(568, 41);
+            this.label16.Name = "label16";
+            this.label16.Size = new System.Drawing.Size(84, 16);
+            this.label16.TabIndex = 56;
+            this.label16.Text = "стоимость";
+            // 
+            // label17
+            // 
+            this.label17.AutoSize = true;
+            this.label17.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.label17.Location = new System.Drawing.Point(464, 42);
+            this.label17.Name = "label17";
+            this.label17.Size = new System.Drawing.Size(96, 16);
+            this.label17.TabIndex = 55;
+            this.label17.Text = "время приб.";
+            // 
+            // label18
+            // 
+            this.label18.AutoSize = true;
+            this.label18.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.label18.Location = new System.Drawing.Point(363, 41);
+            this.label18.Name = "label18";
+            this.label18.Size = new System.Drawing.Size(95, 16);
+            this.label18.TabIndex = 54;
+            this.label18.Text = "время отпр.";
+            // 
+            // label19
+            // 
+            this.label19.AutoSize = true;
+            this.label19.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.label19.Location = new System.Drawing.Point(243, 41);
+            this.label19.Name = "label19";
+            this.label19.Size = new System.Drawing.Size(85, 16);
+            this.label19.TabIndex = 53;
+            this.label19.Text = "дата отпр.";
+            // 
+            // label20
+            // 
+            this.label20.AutoSize = true;
+            this.label20.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.label20.Location = new System.Drawing.Point(94, 41);
+            this.label20.Name = "label20";
+            this.label20.Size = new System.Drawing.Size(143, 16);
+            this.label20.TabIndex = 52;
+            this.label20.Text = "пункт назначения";
+            // 
+            // label21
+            // 
+            this.label21.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.label21.Location = new System.Drawing.Point(19, 23);
+            this.label21.Name = "label21";
+            this.label21.Size = new System.Drawing.Size(67, 37);
+            this.label21.TabIndex = 51;
+            this.label21.Text = " номер поезда";
             // 
             // soldTicketField
             // 
@@ -345,7 +503,7 @@
             // comeToMenu
             // 
             this.comeToMenu.AutoSize = true;
-            this.comeToMenu.Location = new System.Drawing.Point(790, 450);
+            this.comeToMenu.Location = new System.Drawing.Point(803, 486);
             this.comeToMenu.Name = "comeToMenu";
             this.comeToMenu.Size = new System.Drawing.Size(79, 13);
             this.comeToMenu.TabIndex = 9;
@@ -393,7 +551,7 @@
             this.panel2.Dock = System.Windows.Forms.DockStyle.Top;
             this.panel2.Location = new System.Drawing.Point(0, 0);
             this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(883, 65);
+            this.panel2.Size = new System.Drawing.Size(882, 65);
             this.panel2.TabIndex = 0;
             // 
             // closeButton
@@ -417,166 +575,80 @@
             this.label1.ForeColor = System.Drawing.SystemColors.Desktop;
             this.label1.Location = new System.Drawing.Point(0, 0);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(883, 59);
+            this.label1.Size = new System.Drawing.Size(882, 59);
             this.label1.TabIndex = 0;
             this.label1.Text = "Поезда";
             this.label1.TextAlign = System.Drawing.ContentAlignment.TopCenter;
             // 
-            // label12
+            // label23
             // 
-            this.label12.AutoSize = true;
-            this.label12.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.label12.Location = new System.Drawing.Point(787, 44);
-            this.label12.Name = "label12";
-            this.label12.Size = new System.Drawing.Size(61, 16);
-            this.label12.TabIndex = 60;
-            this.label12.Text = "билеты";
+            this.label23.AutoSize = true;
+            this.label23.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.label23.Location = new System.Drawing.Point(14, 452);
+            this.label23.Name = "label23";
+            this.label23.Size = new System.Drawing.Size(231, 29);
+            this.label23.TabIndex = 40;
+            this.label23.Text = "Отсортировать по:";
             // 
-            // label13
+            // buttonSortNumber
             // 
-            this.label13.AutoSize = true;
-            this.label13.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.label13.Location = new System.Drawing.Point(683, 44);
-            this.label13.Name = "label13";
-            this.label13.Size = new System.Drawing.Size(61, 16);
-            this.label13.TabIndex = 59;
-            this.label13.Text = "билеты";
+            this.buttonSortNumber.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(224)))), ((int)(((byte)(192)))));
+            this.buttonSortNumber.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.buttonSortNumber.FlatAppearance.BorderColor = System.Drawing.Color.AntiqueWhite;
+            this.buttonSortNumber.FlatAppearance.BorderSize = 3;
+            this.buttonSortNumber.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(192)))));
+            this.buttonSortNumber.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(192)))));
+            this.buttonSortNumber.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.buttonSortNumber.Font = new System.Drawing.Font("Times New Roman", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.buttonSortNumber.Location = new System.Drawing.Point(249, 438);
+            this.buttonSortNumber.Name = "buttonSortNumber";
+            this.buttonSortNumber.Size = new System.Drawing.Size(177, 61);
+            this.buttonSortNumber.TabIndex = 63;
+            this.buttonSortNumber.Text = "номеру поезда";
+            this.buttonSortNumber.UseVisualStyleBackColor = false;
+            this.buttonSortNumber.Click += new System.EventHandler(this.buttonSortNumber_Click);
             // 
-            // label14
+            // buttonSortEndStation
             // 
-            this.label14.AutoSize = true;
-            this.label14.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.label14.Location = new System.Drawing.Point(771, 28);
-            this.label14.Name = "label14";
-            this.label14.Size = new System.Drawing.Size(89, 16);
-            this.label14.TabIndex = 58;
-            this.label14.Text = "проданные";
+            this.buttonSortEndStation.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(224)))), ((int)(((byte)(192)))));
+            this.buttonSortEndStation.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.buttonSortEndStation.FlatAppearance.BorderColor = System.Drawing.Color.AntiqueWhite;
+            this.buttonSortEndStation.FlatAppearance.BorderSize = 3;
+            this.buttonSortEndStation.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(192)))));
+            this.buttonSortEndStation.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(192)))));
+            this.buttonSortEndStation.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.buttonSortEndStation.Font = new System.Drawing.Font("Times New Roman", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.buttonSortEndStation.Location = new System.Drawing.Point(432, 438);
+            this.buttonSortEndStation.Name = "buttonSortEndStation";
+            this.buttonSortEndStation.Size = new System.Drawing.Size(177, 61);
+            this.buttonSortEndStation.TabIndex = 64;
+            this.buttonSortEndStation.Text = "пункту назначения";
+            this.buttonSortEndStation.UseVisualStyleBackColor = false;
+            this.buttonSortEndStation.Click += new System.EventHandler(this.buttonSortEndStation_Click);
             // 
-            // label15
+            // buttonSortPrice
             // 
-            this.label15.AutoSize = true;
-            this.label15.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.label15.Location = new System.Drawing.Point(668, 28);
-            this.label15.Name = "label15";
-            this.label15.Size = new System.Drawing.Size(94, 16);
-            this.label15.TabIndex = 57;
-            this.label15.Text = "оставшиеся";
-            // 
-            // label16
-            // 
-            this.label16.AutoSize = true;
-            this.label16.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.label16.Location = new System.Drawing.Point(568, 41);
-            this.label16.Name = "label16";
-            this.label16.Size = new System.Drawing.Size(84, 16);
-            this.label16.TabIndex = 56;
-            this.label16.Text = "стоимость";
-            // 
-            // label17
-            // 
-            this.label17.AutoSize = true;
-            this.label17.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.label17.Location = new System.Drawing.Point(464, 42);
-            this.label17.Name = "label17";
-            this.label17.Size = new System.Drawing.Size(96, 16);
-            this.label17.TabIndex = 55;
-            this.label17.Text = "время приб.";
-            // 
-            // label18
-            // 
-            this.label18.AutoSize = true;
-            this.label18.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.label18.Location = new System.Drawing.Point(363, 41);
-            this.label18.Name = "label18";
-            this.label18.Size = new System.Drawing.Size(95, 16);
-            this.label18.TabIndex = 54;
-            this.label18.Text = "время отпр.";
-            // 
-            // label19
-            // 
-            this.label19.AutoSize = true;
-            this.label19.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.label19.Location = new System.Drawing.Point(243, 41);
-            this.label19.Name = "label19";
-            this.label19.Size = new System.Drawing.Size(85, 16);
-            this.label19.TabIndex = 53;
-            this.label19.Text = "дата отпр.";
-            // 
-            // label20
-            // 
-            this.label20.AutoSize = true;
-            this.label20.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.label20.Location = new System.Drawing.Point(94, 41);
-            this.label20.Name = "label20";
-            this.label20.Size = new System.Drawing.Size(143, 16);
-            this.label20.TabIndex = 52;
-            this.label20.Text = "пункт назначения";
-            // 
-            // label21
-            // 
-            this.label21.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.label21.Location = new System.Drawing.Point(19, 23);
-            this.label21.Name = "label21";
-            this.label21.Size = new System.Drawing.Size(67, 37);
-            this.label21.TabIndex = 51;
-            this.label21.Text = " номер поезда";
-            // 
-            // unVPanel
-            // 
-            this.unVPanel.AutoSize = true;
-            this.unVPanel.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.unVPanel.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.unVPanel.ForeColor = System.Drawing.SystemColors.InfoText;
-            this.unVPanel.Location = new System.Drawing.Point(851, -1);
-            this.unVPanel.Name = "unVPanel";
-            this.unVPanel.Size = new System.Drawing.Size(24, 29);
-            this.unVPanel.TabIndex = 61;
-            this.unVPanel.Text = "x";
-            this.unVPanel.TextAlign = System.Drawing.ContentAlignment.TopRight;
-            this.unVPanel.Click += new System.EventHandler(this.unVPanel_Click);
-            // 
-            // buttonBuyTicket
-            // 
-            this.buttonBuyTicket.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(224)))), ((int)(((byte)(192)))));
-            this.buttonBuyTicket.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.buttonBuyTicket.FlatAppearance.BorderColor = System.Drawing.Color.AntiqueWhite;
-            this.buttonBuyTicket.FlatAppearance.BorderSize = 3;
-            this.buttonBuyTicket.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(192)))));
-            this.buttonBuyTicket.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(192)))));
-            this.buttonBuyTicket.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.buttonBuyTicket.Font = new System.Drawing.Font("Times New Roman", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.buttonBuyTicket.Location = new System.Drawing.Point(453, 146);
-            this.buttonBuyTicket.Name = "buttonBuyTicket";
-            this.buttonBuyTicket.Size = new System.Drawing.Size(238, 61);
-            this.buttonBuyTicket.TabIndex = 62;
-            this.buttonBuyTicket.Text = "Купить";
-            this.buttonBuyTicket.UseVisualStyleBackColor = false;
-            this.buttonBuyTicket.Click += new System.EventHandler(this.buttonBuyTicket_Click);
-            // 
-            // label22
-            // 
-            this.label22.AutoSize = true;
-            this.label22.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.label22.Location = new System.Drawing.Point(162, 141);
-            this.label22.Name = "label22";
-            this.label22.Size = new System.Drawing.Size(162, 16);
-            this.label22.TabIndex = 64;
-            this.label22.Text = "Количество Билетов";
-            // 
-            // numOfTicketField
-            // 
-            this.numOfTicketField.Font = new System.Drawing.Font("Imprint MT Shadow", 24F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.numOfTicketField.Location = new System.Drawing.Point(160, 162);
-            this.numOfTicketField.Multiline = true;
-            this.numOfTicketField.Name = "numOfTicketField";
-            this.numOfTicketField.Size = new System.Drawing.Size(182, 45);
-            this.numOfTicketField.TabIndex = 63;
+            this.buttonSortPrice.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(224)))), ((int)(((byte)(192)))));
+            this.buttonSortPrice.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.buttonSortPrice.FlatAppearance.BorderColor = System.Drawing.Color.AntiqueWhite;
+            this.buttonSortPrice.FlatAppearance.BorderSize = 3;
+            this.buttonSortPrice.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(192)))));
+            this.buttonSortPrice.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(192)))));
+            this.buttonSortPrice.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.buttonSortPrice.Font = new System.Drawing.Font("Times New Roman", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.buttonSortPrice.Location = new System.Drawing.Point(615, 438);
+            this.buttonSortPrice.Name = "buttonSortPrice";
+            this.buttonSortPrice.Size = new System.Drawing.Size(177, 61);
+            this.buttonSortPrice.TabIndex = 65;
+            this.buttonSortPrice.Text = "стоимости";
+            this.buttonSortPrice.UseVisualStyleBackColor = false;
+            this.buttonSortPrice.Click += new System.EventHandler(this.buttonSortPrice_Click);
             // 
             // LookTrainForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(883, 476);
+            this.ClientSize = new System.Drawing.Size(882, 508);
             this.Controls.Add(this.panel1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "LookTrainForm";
@@ -640,5 +712,9 @@
         private System.Windows.Forms.Button buttonBuyTicket;
         private System.Windows.Forms.Label label22;
         private System.Windows.Forms.TextBox numOfTicketField;
+        private System.Windows.Forms.Button buttonSortPrice;
+        private System.Windows.Forms.Button buttonSortEndStation;
+        private System.Windows.Forms.Button buttonSortNumber;
+        private System.Windows.Forms.Label label23;
     }
 }
