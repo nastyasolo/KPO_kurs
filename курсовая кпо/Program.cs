@@ -8,9 +8,9 @@ namespace курсовая_кпо
 {
     internal static class Program
     {
-        /// <summary>
+      
         /// Главная точка входа для приложения.
-        /// </summary>
+        
         [STAThread]
         static void Main()
         {

@@ -50,12 +50,6 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="AddTrainForm.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="AddTrainForm.Designer.cs">
-      <DependentUpon>AddTrainForm.cs</DependentUpon>
-    </Compile>
     <Compile Include="AddUserForm.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -63,30 +57,6 @@
       <DependentUpon>AddUserForm.cs</DependentUpon>
     </Compile>
     <Compile Include="DataBase.cs" />
-    <Compile Include="DeleteTrainForm.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="DeleteTrainForm.Designer.cs">
-      <DependentUpon>DeleteTrainForm.cs</DependentUpon>
-    </Compile>
-    <Compile Include="DeleteUserForm.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="DeleteUserForm.Designer.cs">
-      <DependentUpon>DeleteUserForm.cs</DependentUpon>
-    </Compile>
-    <Compile Include="EditTrainForm.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="EditTrainForm.Designer.cs">
-      <DependentUpon>EditTrainForm.cs</DependentUpon>
-    </Compile>
-    <Compile Include="EditUserForm.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="EditUserForm.Designer.cs">
-      <DependentUpon>EditUserForm.cs</DependentUpon>
-    </Compile>
     <Compile Include="LoginForm.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -119,31 +89,10 @@
     <Compile Include="SearchTaskTrainForm.Designer.cs">
       <DependentUpon>SearchTaskTrainForm.cs</DependentUpon>
     </Compile>
-    <Compile Include="SearchTrainForm.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="SearchTrainForm.Designer.cs">
-      <DependentUpon>SearchTrainForm.cs</DependentUpon>
-    </Compile>
     <Compile Include="Train.cs" />
     <Compile Include="User.cs" />
-    <EmbeddedResource Include="AddTrainForm.resx">
-      <DependentUpon>AddTrainForm.cs</DependentUpon>
-    </EmbeddedResource>
     <EmbeddedResource Include="AddUserForm.resx">
       <DependentUpon>AddUserForm.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="DeleteTrainForm.resx">
-      <DependentUpon>DeleteTrainForm.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="DeleteUserForm.resx">
-      <DependentUpon>DeleteUserForm.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="EditTrainForm.resx">
-      <DependentUpon>EditTrainForm.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="EditUserForm.resx">
-      <DependentUpon>EditUserForm.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="LoginForm.resx">
       <DependentUpon>LoginForm.cs</DependentUpon>
@@ -169,9 +118,6 @@
     </Compile>
     <EmbeddedResource Include="SearchTaskTrainForm.resx">
       <DependentUpon>SearchTaskTrainForm.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="SearchTrainForm.resx">
-      <DependentUpon>SearchTrainForm.cs</DependentUpon>
     </EmbeddedResource>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>

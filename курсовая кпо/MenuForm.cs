@@ -14,82 +14,43 @@ namespace курсовая_кпо
     {
         String role;
 
-        public MenuForm(String role)
+        public MenuForm(String role) // Конструктор формы меню
         {
-            InitializeComponent();
-            this.role = role;
-            if (role =="0" ) {
-             AdminPanel.Visible = false;
+            InitializeComponent(); // Инициализация компонентов формы
+            this.role = role; // Установка роли пользователя
+            if (role =="0" )
+            { // Скрытие панели администратора, если роль пользователя не является администраторской
+                AdminPanel.Visible = false;
             }
         }
 
-        private void label2_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void closeButton_Click(object sender, EventArgs e)
+        private void closeButton_Click(object sender, EventArgs e) // Обработчик события для кнопки закрытия приложения
         {
             Application.Exit();
         }
 
-       
-
-        private void buttonSortData_Click(object sender, EventArgs e)
+        private void buttonLookData_Click(object sender, EventArgs e) // Обработчик события для кнопки просмотра данных о поездах
         {
-
-        }
-
-       
-
-        private void label4_Click(object sender, EventArgs e)
-        {
-            this.Hide();
-            LookUserForm lookUserForm = new LookUserForm(role);
-            lookUserForm.Show();
-
-        }
-
-        private void buttonAddData_Click(object sender, EventArgs e)
-        {
-            this.Hide();
-            AddTrainForm addTrainForm = new AddTrainForm(role);
-            addTrainForm.Show();
-        }
-
-        private void buttonDeleteData_Click(object sender, EventArgs e)
-        {
-            this.Hide();
-            DeleteTrainForm deleteTrainForm = new DeleteTrainForm(role);
-            deleteTrainForm.Show();
-        }
-
-        private void buttonRedactData_Click(object sender, EventArgs e)
-        {
-            this.Hide();
-            EditTrainForm editTrainForm = new EditTrainForm(role);
-            editTrainForm.Show();
-        }
-
-        private void buttonLookData_Click(object sender, EventArgs e)
-        {
+            // Скрываем текущую форму и открываем форму просмотра данных о поездах
             this.Hide();
             LookTrainForm lookTrainForm = new LookTrainForm(role);
             lookTrainForm.Show();
         }
 
-        private void buttonSearchData_Click(object sender, EventArgs e)
+        private void SearchTaskTrainButton_Click(object sender, EventArgs e) // Обработчик события для кнопки поиска поездов по заданию
         {
-            this.Hide();
-            SearchTrainForm searchTrainForm = new SearchTrainForm(role);
-            searchTrainForm.Show();
-        }
-
-        private void SearchTaskTrainButton_Click(object sender, EventArgs e)
-        {
+            // Скрываем текущую форму и открываем форму поиска поездов
             this.Hide();
             SearchTaskTrainForm searchTaskTrainForm = new SearchTaskTrainForm(role);
             searchTaskTrainForm.Show();
+        }
+
+        private void UsersData_Click(object sender, EventArgs e) // Обработчик события для кнопки просмотра данных о пользователях
+        {
+            // Обработчик события для кнопки просмотра данных о пользователях
+            this.Hide();
+            LookUserForm lookUserForm = new LookUserForm(role);
+            lookUserForm.Show();
         }
     }
 }

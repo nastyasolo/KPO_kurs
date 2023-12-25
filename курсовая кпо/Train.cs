@@ -6,23 +6,23 @@ using System.Threading.Tasks;
 
 namespace курсовая_кпо
 {
-    public class Train
+    public class Train // Класс, представляющий модель данных для поезда
     {
-        public string number { get; set; }
+        public string number { get; set; } // Номер поезда
 
-        public string endStation { get; set; }
+        public string endStation { get; set; } // Конечная станция
 
-        public DateTime date { get; set; }
+        public DateTime date { get; set; } // Дата отправления поезда
 
-        public string timeStart { get; set; }
+        public string timeStart { get; set; }  // Время отправления поезда
 
-        public string timeEnd { get; set; }
+        public string timeEnd { get; set; } // Время прибытия поезда
 
-        public string price { get; set; }
+        public string price { get; set; }  // Стоимость билета
 
-        public int availableTicket { get; set; }
+        public int availableTicket { get; set; } // Количество доступных билетов
 
-        public int soldTicket { get; set; }
+        public int soldTicket { get; set; } // Количество проданных билетов
 
     }
 }
